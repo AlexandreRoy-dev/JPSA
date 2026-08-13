@@ -135,7 +135,7 @@
       var mailto =
         "mailto:jpsa.jpsa@outlook.com" +
         "?subject=" +
-        encodeURIComponent("Demande JPSA — " + (service || "site web")) +
+        encodeURIComponent("Demande JPSA : " + (service || "site web")) +
         "&body=" +
         encodeURIComponent(body);
 

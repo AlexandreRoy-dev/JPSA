@@ -101,7 +101,7 @@ textarea {
   border: 0;
 }
 
-/* ——— Header ——— */
+/* --- Header --- */
 
 .header {
   position: fixed;
@@ -232,7 +232,7 @@ body.nav-open .menu-toggle span::after {
   transform: rotate(-45deg);
 }
 
-/* ——— Buttons ——— */
+/* --- Buttons --- */
 
 .btn {
   display: inline-flex;
@@ -290,7 +290,7 @@ body.nav-open .menu-toggle span::after {
   line-height: 1.2;
 }
 
-/* ——— Hero ——— */
+/* --- Hero --- */
 
 .hero {
   position: relative;
@@ -403,7 +403,7 @@ body.nav-open .menu-toggle span::after {
   background: linear-gradient(180deg, var(--silver), transparent);
 }
 
-/* ——— Ribbon ——— */
+/* --- Ribbon --- */
 
 .ribbon {
   border-block: 1px solid var(--line);
@@ -446,7 +446,7 @@ body.nav-open .menu-toggle span::after {
   }
 }
 
-/* ——— Sections ——— */
+/* --- Sections --- */
 
 .section {
   position: relative;
@@ -500,7 +500,7 @@ body.nav-open .menu-toggle span::after {
   font-weight: 300;
 }
 
-/* ——— Services ——— */
+/* --- Services --- */
 
 .services-grid {
   display: grid;
@@ -580,7 +580,7 @@ body.nav-open .menu-toggle span::after {
   pointer-events: none;
 }
 
-/* ——— Approach ——— */
+/* --- Approach --- */
 
 .approach {
   display: grid;
@@ -670,7 +670,7 @@ body.nav-open .menu-toggle span::after {
   color: var(--muted);
 }
 
-/* ——— Process ——— */
+/* --- Process --- */
 
 .process {
   display: grid;
@@ -728,7 +728,7 @@ body.nav-open .menu-toggle span::after {
   display: none;
 }
 
-/* ——— Team ——— */
+/* --- Team --- */
 
 .team-grid {
   display: grid;
@@ -784,7 +784,7 @@ body.nav-open .menu-toggle span::after {
   border-bottom-color: var(--white);
 }
 
-/* ——— Urgence band ——— */
+/* --- Urgence band --- */
 
 .urgence {
   position: relative;
@@ -848,7 +848,7 @@ body.nav-open .menu-toggle span::after {
   color: var(--white);
 }
 
-/* ——— Contact ——— */
+/* --- Contact --- */
 
 .contact-layout {
   display: grid;
@@ -949,7 +949,7 @@ body.nav-open .menu-toggle span::after {
   font-weight: 300;
 }
 
-/* ——— Footer ——— */
+/* --- Footer --- */
 
 .footer {
   border-top: 1px solid var(--line);
@@ -1006,7 +1006,7 @@ body.nav-open .menu-toggle span::after {
   font-size: 0.8rem;
 }
 
-/* ——— Inner pages ——— */
+/* --- Inner pages --- */
 
 .page-hero {
   padding: calc(var(--header-h) + 4.5rem) 0 3rem;
@@ -1073,7 +1073,7 @@ body.nav-open .menu-toggle span::after {
   margin: 0 auto 1.75rem;
 }
 
-/* ——— Animations ——— */
+/* --- Animations --- */
 
 .hero [data-anim] {
   opacity: 0;
@@ -1139,13 +1139,13 @@ body.nav-open .menu-toggle span::after {
   }
 }
 
-/* ——— Mobile bar ——— */
+/* --- Mobile bar --- */
 
 .mobile-urgence {
   display: none;
 }
 
-/* ——— Responsive ——— */
+/* --- Responsive --- */
 
 @media (max-width: 960px) {
   .services-grid {
