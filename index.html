@@ -72,23 +72,27 @@
   </header>
 
   <main id="contenu">
-    <section class="hero plate">
+    <section class="hero">
+      <div class="hero__photo" aria-hidden="true">
+        <img src="assets/img/machine-sombre.jpg" alt="">
+      </div>
       <div class="hero__texture" aria-hidden="true"></div>
       <div class="hero__wash" aria-hidden="true"></div>
+      <div class="hero__light" aria-hidden="true"></div>
       <div class="hero__watermark" aria-hidden="true">JPSA</div>
       <div class="hero__content">
-        <p class="hero__wordmark" data-anim>JPSA</p>
-        <span class="plaque" data-anim data-delay="1">Mécanique industrielle</span>
+        <p class="hero__wordmark" data-text="JPSA" data-anim>JPSA</p>
+        <span class="plaque plaque--hero" data-anim data-delay="1">Mécanique industrielle</span>
         <h1 data-anim data-delay="1">Quand chaque heure d’arrêt se chiffre.</h1>
         <p class="hero__lead" data-anim data-delay="2">Maintenance, arrêts planifiés, installation et urgences, exécutés avec la rigueur que vos équipements, et votre production, exigent.</p>
         <div class="hero__actions" data-anim data-delay="2">
-          <a class="btn btn--solid" href="tel:+18194520945">Appel d’urgence 24/7</a>
-          <a class="btn btn--ghost" href="contact.html">Planifier une intervention</a>
+          <a class="btn btn--solid btn--hero" href="tel:+18194520945">Appel d’urgence 24/7</a>
+          <a class="btn btn--ghost btn--hero" href="contact.html">Planifier une intervention</a>
         </div>
-        <div class="hero__scroll" aria-hidden="true">
-          <span>Défiler</span>
-          <span class="hero__scroll-line"></span>
-        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Défiler</span>
+        <span class="hero__scroll-line"></span>
       </div>
     </section>
 
