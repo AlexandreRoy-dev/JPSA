@@ -1,16 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>./index.html</loc></url>
-  <url><loc>./services.html</loc></url>
-  <url><loc>./maintenance.html</loc></url>
-  <url><loc>./arrets-planifies.html</loc></url>
-  <url><loc>./installation-reparation.html</loc></url>
-  <url><loc>./amelioration-continue.html</loc></url>
-  <url><loc>./urgence.html</loc></url>
-  <url><loc>./location-personnel.html</loc></url>
-  <url><loc>./a-propos.html</loc></url>
-  <url><loc>./equipe.html</loc></url>
-  <url><loc>./faq.html</loc></url>
-  <url><loc>./contact.html</loc></url>
-  <url><loc>./confidentialite.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://jpsa.ca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/services.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/services.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/maintenance.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/maintenance.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/maintenance.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/maintenance.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/arrets-planifies.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/arrets-planifies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/planned-shutdowns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/arrets-planifies.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/planned-shutdowns.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/arrets-planifies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/planned-shutdowns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/arrets-planifies.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/installation-reparation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/installation-reparation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/installation-repair.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/installation-reparation.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/installation-repair.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/installation-reparation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/installation-repair.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/installation-reparation.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/amelioration-continue.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/amelioration-continue.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/continuous-improvement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/amelioration-continue.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/continuous-improvement.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/amelioration-continue.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/continuous-improvement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/amelioration-continue.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/urgence.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/urgence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/emergency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/urgence.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/emergency.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/urgence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/emergency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/urgence.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/location-personnel.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/location-personnel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/staff-rental.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/location-personnel.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/staff-rental.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/location-personnel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/staff-rental.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/location-personnel.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/equipe.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/team.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/equipe.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/team.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/team.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/equipe.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/faq.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/faq.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/contact.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/contact.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/confidentialite.html"/>
+  </url>
+  <url>
+    <loc>https://jpsa.ca/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://jpsa.ca/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jpsa.ca/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpsa.ca/confidentialite.html"/>
+  </url>
 </urlset>

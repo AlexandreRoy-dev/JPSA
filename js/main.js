@@ -106,42 +106,55 @@
       event.preventDefault();
 
       var data = new FormData(form);
-      var name = (data.get("nom") || "").toString().trim();
-      var company = (data.get("entreprise") || "").toString().trim();
-      var phone = (data.get("telephone") || "").toString().trim();
-      var email = (data.get("courriel") || "").toString().trim();
+      var isEn = (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
+      var name = (data.get("nom") || data.get("name") || "").toString().trim();
+      var company = (data.get("entreprise") || data.get("company") || "").toString().trim();
+      var phone = (data.get("telephone") || data.get("phone") || "").toString().trim();
+      var email = (data.get("courriel") || data.get("email") || "").toString().trim();
       var service = (data.get("service") || "").toString().trim();
       var message = (data.get("message") || "").toString().trim();
 
       if (!name || !phone || !email) {
         var status = form.querySelector(".form__status");
         if (status) {
-          status.textContent = "Veuillez remplir le nom, le téléphone et le courriel.";
+          status.textContent = isEn
+            ? "Please fill in your name, phone number and email."
+            : "Veuillez remplir le nom, le téléphone et le courriel.";
           status.classList.add("is-visible");
         }
         return;
       }
 
-      var body = [
-        "Nom : " + name,
-        "Entreprise : " + company,
-        "Téléphone : " + phone,
-        "Courriel : " + email,
-        "Service : " + service,
-        "",
-        message
-      ].join("\n");
+      var body = isEn
+        ? [
+            "Name: " + name,
+            "Company: " + company,
+            "Phone: " + phone,
+            "Email: " + email,
+            "Service: " + service,
+            "",
+            message
+          ].join("\n")
+        : [
+            "Nom : " + name,
+            "Entreprise : " + company,
+            "Téléphone : " + phone,
+            "Courriel : " + email,
+            "Service : " + service,
+            "",
+            message
+          ].join("\n");
 
       var mailto =
-        "mailto:jpsa.jpsa@outlook.com" +
+        "mailto:jean-pascal@jpsa.ca" +
         "?subject=" +
-        encodeURIComponent("Demande JPSA : " + (service || "site web")) +
+        encodeURIComponent((isEn ? "JPSA request: " : "Demande JPSA : ") + (service || (isEn ? "website" : "site web"))) +
         "&body=" +
         encodeURIComponent(body);
 
       window.location.href = mailto;
       window.setTimeout(function () {
-        window.location.href = "merci.html";
+        window.location.href = form.getAttribute("data-thanks") || (isEn ? "thank-you.html" : "merci.html");
       }, 500);
     });
   }
