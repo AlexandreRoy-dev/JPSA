@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <title>JPSA — social share</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; background: #070707; }
+    .card {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background: #070707;
+      color: #f3f3f3;
+      font-family: "Outfit", system-ui, sans-serif;
+      overflow: hidden;
+    }
+    .texture {
+      position: absolute;
+      inset: 0;
+      background-image: url("../diamond-plate.svg");
+      background-size: 160px 160px;
+      opacity: 0.55;
+    }
+    .wash {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 50% 32%, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.72) 68%),
+        linear-gradient(180deg, rgba(7, 7, 7, 0.28) 0%, rgba(7, 7, 7, 0.94) 100%);
+    }
+    .watermark {
+      position: absolute;
+      left: 50%;
+      top: 38%;
+      transform: translate(-50%, -50%);
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      font-weight: 700;
+      font-size: 280px;
+      letter-spacing: 0.02em;
+      line-height: 0.8;
+      color: rgba(255, 255, 255, 0.045);
+      white-space: nowrap;
+      user-select: none;
+    }
+    .inner {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 52px 64px 40px;
+    }
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 18px;
+      padding-bottom: 8px;
+    }
+    .wordmark {
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      font-weight: 700;
+      font-size: 108px;
+      letter-spacing: 0.12em;
+      line-height: 0.86;
+      color: #fff;
+      text-shadow: 6px 7px 0 #2c2c2c;
+    }
+    .plaque {
+      display: inline-block;
+      background: #cfcfcf;
+      color: #070707;
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      padding: 0.5em 1.15em 0.42em;
+      line-height: 1.2;
+    }
+    .headline {
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      font-weight: 500;
+      font-size: 34px;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+      line-height: 1.18;
+      max-width: 16ch;
+    }
+    .urgence {
+      margin-top: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 22px;
+      background: #fff;
+      color: #070707;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .contacts {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(12, 12, 12, 0.72);
+      min-height: 148px;
+    }
+    .rule { background: rgba(255, 255, 255, 0.22); }
+    .person {
+      padding: 22px 28px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+    .person .kicker {
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8d8d8d;
+      font-weight: 500;
+    }
+    .person .name {
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1.15;
+    }
+    .person .phone {
+      margin-top: 8px;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: #f3f3f3;
+    }
+    .person .mail {
+      font-size: 18px;
+      font-weight: 400;
+      color: #cfcfcf;
+      text-decoration: none;
+    }
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      font-size: 14px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #8d8d8d;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="texture"></div>
+    <div class="wash"></div>
+    <div class="watermark">JPSA</div>
+    <div class="inner">
+      <div class="hero">
+        <div class="wordmark">JPSA</div>
+        <span class="plaque">Mécanique industrielle</span>
+        <h1 class="headline">Quand chaque heure d’arrêt se chiffre.</h1>
+        <span class="urgence">Urgence 24/7</span>
+      </div>
+      <div class="contacts">
+        <div class="person">
+          <span class="kicker">Direction</span>
+          <span class="name">Jean-Pascal St-Arnaud</span>
+          <span class="phone">819 452-0945</span>
+          <span class="mail">jean-pascal@jpsa.ca</span>
+        </div>
+        <div class="rule"></div>
+        <div class="person">
+          <span class="kicker">Opérations</span>
+          <span class="name">Marc-André Ménard</span>
+          <span class="phone">514 778-5240</span>
+          <span class="mail">marcmenard@jpsa.ca</span>
+        </div>
+      </div>
+      <div class="foot">
+        <span>JPSA.ca</span>
+        <span>Interventions internationales</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
