@@ -36,7 +36,7 @@ Puis : [http://127.0.0.1:4173/](http://127.0.0.1:4173/) et [http://127.0.0.1:417
 ## Coordonnées
 
 - Jean-Pascal St-Arnaud, PDG : 819 452-0945, `jean-pascal@jpsa.ca`
-- Marc-André Ménard, directeur des opérations : 514 778-5240, `marc-andre@jpsa.ca`
+- Marc-André Ménard, directeur des opérations : 514 778-5240, `marcmenard@jpsa.ca`
 
 Le formulaire ouvre un courriel vers Jean-Pascal, puis redirige vers `merci.html` / `en/thank-you.html`.
 
@@ -49,4 +49,4 @@ Chiffres affichés sur l’accueil et À propos — placeholders en attendant Ma
 - **40+** clients desservis
 - **24/7** urgence (celui-ci est confirmé)
 
-Adresses `@jpsa.ca` posées sur le site. À valider une fois les boîtes créées / le transfert en place.
+Adresses confirmées : `jean-pascal@jpsa.ca` et `marcmenard@jpsa.ca`.
