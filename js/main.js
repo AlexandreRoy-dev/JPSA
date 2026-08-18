@@ -158,4 +158,108 @@
       }, 500);
     });
   }
+
+  var CONSENT_KEY = "jpsa-consent-v1";
+
+  function isEnglish() {
+    return (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
+  }
+
+  function privacyHref() {
+    var path = (location.pathname || "").replace(/\\/g, "/");
+    var inEn = path.indexOf("/en/") !== -1 || /\/en\/?$/.test(path);
+    return inEn ? "privacy.html#cookies" : "confidentialite.html#temoins";
+  }
+
+  function readConsent() {
+    try {
+      var raw = window.localStorage.getItem(CONSENT_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function writeConsent(optional) {
+    var payload = { optional: !!optional, ts: Date.now() };
+    try {
+      window.localStorage.setItem(CONSENT_KEY, JSON.stringify(payload));
+    } catch (err) {
+      /* private mode */
+    }
+    document.dispatchEvent(new CustomEvent("jpsa:consent", { detail: payload }));
+  }
+
+  function hideConsent(banner) {
+    if (!banner) return;
+    banner.setAttribute("hidden", "");
+  }
+
+  function showConsent(banner) {
+    if (!banner) return;
+    banner.removeAttribute("hidden");
+  }
+
+  function buildConsent() {
+    var en = isEnglish();
+    var banner = document.createElement("div");
+    banner.className = "consent";
+    banner.setAttribute("hidden", "");
+    banner.setAttribute("role", "dialog");
+    banner.setAttribute("aria-modal", "false");
+    banner.setAttribute("aria-labelledby", "consent-title");
+    banner.setAttribute("aria-describedby", "consent-text");
+    banner.innerHTML =
+      '<p class="consent__kicker" id="consent-title">' +
+      (en ? "Cookies" : "Témoins") +
+      "</p>" +
+      '<p class="consent__text" id="consent-text">' +
+      (en
+        ? "This site stores your cookie choice. No advertising, no profiling. See the privacy policy for details."
+        : "Ce site mémorise votre choix de témoins. Aucune publicité, aucun profilage. Détails dans la politique de confidentialité.") +
+      "</p>" +
+      '<div class="consent__actions">' +
+      '<a class="consent__policy" href="' +
+      privacyHref() +
+      '">' +
+      (en ? "Privacy policy" : "Politique de confidentialité") +
+      "</a>" +
+      '<button class="btn btn--ghost" type="button" data-consent="refuse">' +
+      (en ? "Refuse" : "Refuser") +
+      "</button>" +
+      '<button class="btn btn--solid" type="button" data-consent="accept">' +
+      (en ? "Accept" : "Accepter") +
+      "</button>" +
+      "</div>";
+
+    banner.addEventListener("click", function (event) {
+      var btn = event.target.closest("[data-consent]");
+      if (!btn) return;
+      writeConsent(btn.getAttribute("data-consent") === "accept");
+      hideConsent(banner);
+    });
+
+    document.body.appendChild(banner);
+
+    var footerBottom = document.querySelector(".footer__bottom");
+    if (footerBottom) {
+      var manage = document.createElement("button");
+      manage.type = "button";
+      manage.className = "consent__manage";
+      manage.textContent = en ? "Manage cookies" : "Gérer les témoins";
+      manage.addEventListener("click", function () {
+        showConsent(banner);
+        banner.querySelector("[data-consent='accept']").focus();
+      });
+      footerBottom.appendChild(manage);
+    }
+
+    if (!readConsent()) {
+      showConsent(banner);
+    } else {
+      hideConsent(banner);
+    }
+  }
+
+  buildConsent();
 })();
